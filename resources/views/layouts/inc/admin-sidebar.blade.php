@@ -1,58 +1,29 @@
 <div class="container-scroller">
   <!-- partial:partials/_sidebar.html -->
   <nav class="sidebar sidebar-offcanvas" id="sidebar">
-    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-      <a class="sidebar-brand brand-logo" href="index.html"><img src="{{ asset('assets/images/logo.png')}}" alt="logo" /></a>
-      <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/icon.png')}}" alt="logo" /></a>
+    <!-- <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+      <a class="sidebar-brand brand-logo" href="index.html" style="height: 50px; width: 50px;"><img src="{{ asset('assets/images/ss_logo_white.png')}}" alt="logo" /></a>
+      <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/ss_logo_white.png')}}" alt="logo" /></a>
+    </div> -->
+    <div class="container-fluid">
+      <a class="navbar-brand m-3" href="#">
+        <img src="{{ asset('assets/images/ss_logo_white.png')}}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <b>safespace</b>
+      </a>
     </div>
-    <ul class="nav">
-      <li class="nav-item profile">
+    <ul class="nav flex-column">
+      <!-- <li class="nav-item profile">
         <div class="profile-desc">
           <div class="profile-pic">
             <div class="count-indicator">
               <img class="img-xs rounded-circle " src="{{ asset('assets/images/user.png')}}" alt="">
             </div>
             <div class="profile-name">
-              <h5 class="mb-0 font-weight-normal">Gabriel Dy</h5>
+              <h5 class="mb-0 font-weight-normal">Welcome!</h5>
               <span>Admin</span>
             </div>
           </div>
-          <a href="#" id="profile-dropdown" data-toggle="dropdown"></a>
-          <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                  <i class="mdi mdi-onepassword  text-info"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                  <i class="mdi mdi-calendar-today text-success"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </li>
+      </li> -->
       <li class="nav-item nav-category">
         <span class="nav-link">Navigation</span>
       </li>
@@ -78,14 +49,16 @@
         </a>
       </li>
       <li class="nav-item menu-items">
-        <a class="nav-link" href="pages/forms/basic_elements.html">
+        <a class="nav-link" href="{{ url('admin/users') }}">
           <span class="menu-icon">
-            <i class="mdi mdi-playlist-play"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+            </svg>
           </span>
-          <span class="menu-title">Form Elements</span>
+          <span class="menu-title">Users</span>
         </a>
       </li>
-      <li class="nav-item menu-items">
+      <!-- <li class="nav-item menu-items">
         <a class="nav-link" href="pages/tables/basic-table.html">
           <span class="menu-icon">
             <i class="mdi mdi-table-large"></i>
@@ -133,6 +106,6 @@
           </span>
           <span class="menu-title">Documentation</span>
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>

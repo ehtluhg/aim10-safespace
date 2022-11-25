@@ -16,8 +16,7 @@
 
     <!-- CSS Files -->
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/materialdesignicons.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/css/vendor.bundle.base.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css')}}">
@@ -35,7 +34,6 @@
     <div class="wrapper">
         @include('layouts.inc.admin-sidebar')
         <div class="container-fluid page-body-wrapper">
-            @include('layouts.inc.admin-navbar')
             <div class="main-panel">
                 <div class="content-wrapper">
                     @yield('content')
